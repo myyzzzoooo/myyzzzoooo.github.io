@@ -207,6 +207,28 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.profile.center {
+  margin: auto;
+  justify-content: center;
+
+  .header {
+    text-align: center;
+    font-size: x-large;
+  }
+
+  picture {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+  }
+
+  img {
+    margin: auto;
+    max-width: 25%;
+    min-width: 100px;
+  }
+}
+
 .profile.float-right {
   margin-left: 1rem;
 }
