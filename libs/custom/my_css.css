@@ -1,5 +1,11 @@
 h4 {
   letter-spacing: .1rem; }
+.title-small {
+  font-size: 18px;   /* h4보다 작게, p보다는 크게 */
+  font-weight: normal;
+  margin-top: 15px;   /* 위쪽 여백 */
+  margin-bottom: 5px; /* 아래쪽 여백 */
+}
 .container {
   max-width: 800px; }
 .header {
@@ -51,6 +57,12 @@ h4 {
   color: rgba(0, 0, 0, 0.60); }
 .image {
   text-align: center; }
+.figure img {
+    margin: auto;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /*  ================ Project styling  ================ */
 .project-container {

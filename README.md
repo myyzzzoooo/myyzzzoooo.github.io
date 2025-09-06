@@ -34,3 +34,9 @@ More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPageP
   - Icons: [Font Awesome](http://fontawesome.io/)
 - JS
   - [Jquery (3.1.1)](https://jquery.com/)
+jekyll serve
+scp -r ./_site/* ../yapengtian.github.io
+
+git add .
+git commit -m "xxx"
+git push -u origin master
