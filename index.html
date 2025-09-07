@@ -1,3 +1,8 @@
+---
+layout: none
+title: Hoiyeong Jin
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,7 +122,7 @@
       </div>
     </nav>
 
-    <!-- ========== About ========== -->
+<!-- ========== About ========== -->
 <div class="docs-section" id="about">
   <h4>About</h4>
     <p>
@@ -153,10 +158,6 @@
               <div class="paper-buttons">
                 {% if paper.paper_pdf %}
                   <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-                {% endif %}
-
-                {% if paper.arxiv %}
-                  <a class="button" href="{{ paper.arxiv | prepend: site.baseurl }}" target="_blank">Arxiv</a>
                 {% endif %}
 
                 {% if paper.slides %}
