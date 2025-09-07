@@ -129,7 +129,7 @@
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
   <p class="publication-note">
-    (*: Equal contribution, C: Conferences, J: Journal, W: Workshop, P: Preprint).
+    (*: Equal contribution, C: Conferences).
   </p>
 
   <div class="tab-content">
@@ -153,10 +153,6 @@
               <div class="paper-buttons">
                 {% if paper.paper_pdf %}
                   <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-                {% endif %}
-
-                {% if paper.arxiv %}
-                  <a class="button" href="{{ paper.arxiv | prepend: site.baseurl }}" target="_blank">Arxiv</a>
                 {% endif %}
 
                 {% if paper.slides %}
@@ -190,6 +186,7 @@
     </div> 
   </div> 
 </div> 
+
 
 <!-- ========== Education ========== -->
 <div class="docs-section" id="education">
@@ -250,13 +247,43 @@
 <!-- ========== Honors & Awards ========== -->
 <div class="docs-section" id="honors">
   <h4>Honors & Awards</h4>
-  {% for award in site.data.honor.honor-award %}
+  
     <div class="paper">
       <p class="title">
-        <b>{{ award.place }}</b>, {{ award.title }} <b style="float:right;">{{ award.time }}</b>
+        <b>4th Award in the 2023 Military AI CompetitiON (MAICON)</b>, Deepfake Video Classification <b style="float:right;"></b>
       </p>
     </div>
-  {% endfor %}
+  
+    <div class="paper">
+      <p class="title">
+        <b>3rd Award in the 2023 Samsung AI Challenge : Image Quality Assessment</b>, IQA & Image Captioning <b style="float:right;"></b>
+      </p>
+    </div>
+  
+    <div class="paper">
+      <p class="title">
+        <b>3rd Award in the 2022 KSC Undergraduate Paper Award</b>, Knowledge Distillation at Brain Age Prediction <b style="float:right;"></b>
+      </p>
+    </div>
+  
+    <div class="paper">
+      <p class="title">
+        <b>2nd Award in the 2022 KHUGGLE AI Challenge</b>, Real-world Image Super-Resolution <b style="float:right;"></b>
+      </p>
+    </div>
+  
+    <div class="paper">
+      <p class="title">
+        <b>3rd Award in the 2022 Military AI CompetitiON (MAICON)</b>, Instance Segmentation & Image Restoration <b style="float:right;"></b>
+      </p>
+    </div>
+  
+    <div class="paper">
+      <p class="title">
+        <b>Academic Excellence Scholarship</b>, Department of Software Convergence, KyungHee University, Korea <b style="float:right;">2022 Spring</b>
+      </p>
+    </div>
+  
 </div>
 
 <!-- ========== Invited Talks ========== -->
