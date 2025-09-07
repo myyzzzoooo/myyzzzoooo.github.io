@@ -1,13 +1,10 @@
 experiences:
+  - place: "Undergraduate Researcher"
+    time: "May. 2024 - Mar. 2025"
+    title: '<a href="https://davian.kaist.ac.kr/">Data and Visual Analytics Lab (DAVIAN Lab)</a> (advised by <a href="https://sites.google.com/site/jaegulchoo/">Prof. Jaegul Choo</a>)'
+    category: "undergraduate researcher"
 
-- place: "KAIST"
-  time: "2023. 05 - Current"
-  title: "Ph.D Candidates"
-  subtitle: "Graduate School of Artificial Intelligence"
-  category: "school"
-
-- place: "KyungHee University"
-  time: "2019 - 2023"
-  title: "B.Sc. Student"
-  subtitle: "Department of Software Convergence"
-  category: "school"
+  - place: "Undergraduate Researcher"
+    time: "Mar. 2021 - Sep. 2023"
+    title: '<a href="https://mlvc.khu.ac.kr/">Machine Learning and Visual Computing Lab</a> (advised by <a href="https://scholar.google.co.kr/citations?user=EULut5oAAAAJ&hl=ko">Prof. Sungho Bae</a>)'
+    category: "undergraduate researcher"

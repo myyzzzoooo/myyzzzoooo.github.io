@@ -1,6 +1,6 @@
 papers:
 
-  - title: "PromptDresser: Improving the Quality and Controllability of Virtual Try-On via Generative Textual Prompt and Prompt-aware Mask"
+  - title: "[C2] PromptDresser: Improving the Quality and Controllability of Virtual Try-On via Generative Textual Prompt and Prompt-aware Mask"
     authors: "Jeongho Kim*, <b>Hoiyeong Jin</b>*, Sunghyun Park, Jaegul Choo"
     venue: "Proceedings of the ieee/cvf international conference on computer vision (ICCV), 2025."
     paper_pdf: "https://arxiv.org/abs/2412.16978"
@@ -8,7 +8,7 @@ papers:
     img: "/assets/publications/2025_ICCV/thumb.png"
     selected: y
 
-  - title: "Descanning: From scanned to the original images with a color correction diffusion model"
+  - title: "[C1] Descanning: From scanned to the original images with a color correction diffusion model"
     authors: "Junghun Cha, Ali Haider, Seoyun Yang, <b>Hoiyeong Jin</b>, Subin Yang, AFM Shahab Uddin, Jaehyoung Kim, Soo Ye Kim, Sung-Ho Bae"
     venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024."
     paper_pdf: "https://arxiv.org/abs/2402.05350"
