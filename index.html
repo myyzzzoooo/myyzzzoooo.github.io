@@ -129,84 +129,63 @@
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
   <p class="publication-note">
-    (*: Equal contribution, C: Conferences, A: ArXiv).
+    (*: Equal contribution, C: Conferences, J: Journal, W: Workshop, P: Preprint).
   </p>
 
   <div class="tab-content">
     <div class="tab-pane active">
-      
+      {% for paper in site.data.publications.papers %}
         <div class="paper">
           <div class="row">
-            
+            {% if paper.thumbnail %}
               <div class="four columns">
-                <img class="u-max-full-width" style="border-radius: 1rem;" src="/assets/publications/2025_ICCV/thumb.png" alt="[C2] PromptDresser: Improving the Quality and Controllability of Virtual Try-On via Generative Textual Prompt and Prompt-aware Mask thumbnail">
+                <img class="u-max-full-width" style="border-radius: 1rem;" src="{{ paper.thumbnail | prepend: site.baseurl }}" alt="{{ paper.title }} thumbnail">
               </div>
-            
+            {% endif %}
 
-            <div class="eight columns">
-              <p class="title"><b>[C2] PromptDresser: Improving the Quality and Controllability of Virtual Try-On via Generative Textual Prompt and Prompt-aware Mask</b></p>
-              <p>Jeongho Kim*, <b>Hoiyeong Jin</b>*, Sunghyun Park, Jaegul Choo</p>
-              <p><i>Proceedings of the ieee/cvf international conference on computer vision (ICCV), 2025.</i></p>
-              
+            <div class="{% if paper.thumbnail %}eight columns{% else %}twelve columns{% endif %}">
+              <p class="title"><b>{{ paper.title }}</b></p>
+              <p>{{ paper.authors }}</p>
+              <p><i>{{ paper.venue }}</i></p>
+              {% if paper.venue2 %}
+                <p><i>{{ paper.venue2 }}</i></p>
+              {% endif %}
               <div class="paper-buttons">
-                
-                  <a class="button" href="https://arxiv.org/abs/2412.16978" target="_blank">Paper</a>
-                
+                {% if paper.paper_pdf %}
+                  <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+                {% endif %}
 
-                
+                {% if paper.slides %}
+                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+                {% endif %}
 
-                
+                {% if paper.website %}
+                  <a class="button" href="{{ paper.website | prepend: site.baseurl }}" target="_blank">Website</a>
+                {% endif %}
 
-                
+                {% if paper.poster %}
+                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+                {% endif %}
 
-                
-                  <a class="button" href="https://github.com/rlawjdghek/PromptDresser" target="_blank">Code</a>
-                
+                {% if paper.video %}
+                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+                {% endif %}
 
-                
+                {% if paper.code %}
+                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+                {% endif %}
+
+                {% if paper.data %}
+                  <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+                {% endif %}
               </div>
             </div>
           </div> 
         </div> 
-      
-        <div class="paper">
-          <div class="row">
-            
-              <div class="four columns">
-                <img class="u-max-full-width" style="border-radius: 1rem;" src="/assets/publications/2024_AAAI/thumb.png" alt="[C1] Descanning: From scanned to the original images with a color correction diffusion model thumbnail">
-              </div>
-            
-
-            <div class="eight columns">
-              <p class="title"><b>[C1] Descanning: From scanned to the original images with a color correction diffusion model</b></p>
-              <p>Junghun Cha, Ali Haider, Seoyun Yang, <b>Hoiyeong Jin</b>, Subin Yang, AFM Shahab Uddin, Jaehyoung Kim, Soo Ye Kim, Sung-Ho Bae</p>
-              <p><i>Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024.</i></p>
-              
-              <div class="paper-buttons">
-                
-                  <a class="button" href="https://arxiv.org/abs/2402.05350" target="_blank">Paper</a>
-                
-
-                
-
-                
-
-                
-
-                
-                  <a class="button" href="https://github.com/jhcha08/Descanning" target="_blank">Code</a>
-                
-
-                
-              </div>
-            </div>
-          </div> 
-        </div> 
-      
+      {% endfor %}
     </div> 
   </div> 
 </div> 
-
 <!-- ========== Education ========== -->
 <div class="docs-section" id="education">
   <h4>Education</h4>
