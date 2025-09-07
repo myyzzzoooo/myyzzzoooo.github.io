@@ -5,7 +5,7 @@ papers:
     venue: "Proceedings of the ieee/cvf international conference on computer vision (ICCV), 2025."
     paper_pdf: "https://arxiv.org/abs/2412.16978"
     code: "https://github.com/rlawjdghek/PromptDresser"
-    img: "/assets/publications/2025_ICCV/thumb.png"
+    thumbnail: "/assets/publications/2025_ICCV/thumb.png"
     selected: y
 
   - title: "[C1] Descanning: From scanned to the original images with a color correction diffusion model"
@@ -13,5 +13,5 @@ papers:
     venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024."
     paper_pdf: "https://arxiv.org/abs/2402.05350"
     code: "https://github.com/jhcha08/Descanning"
-    img: "/assets/publications/2024_AAAI/thumb.png"
+    thumbnail: "/assets/publications/2024_AAAI/thumb.png"
     selected: y
