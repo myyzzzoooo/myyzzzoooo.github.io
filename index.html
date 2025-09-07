@@ -1,8 +1,3 @@
----
-layout: none
-title: Hoiyeong Jin
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,7 +139,7 @@ title: Hoiyeong Jin
           <div class="row">
             {% if paper.thumbnail %}
               <div class="four columns">
-                <img class="u-max-full-width" style="border-radius: 1rem;" src="{{ paper.thumbnail | prepend: site.baseurl }}" alt="{{ paper.title }} thumbnail">
+                <img class="u-max-full-width" style="border-radius: 1rem;" src="{{ paper.thumbnail }}" alt="{{ paper.title }} thumbnail">
               </div>
             {% endif %}
 
