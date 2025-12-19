@@ -6,7 +6,7 @@ papers:
     paper_pdf: ""
     code: ""
     project_page: "https://myyzzzoooo.github.io/InsertAnywhere/"
-    thumbnail: "/assets/publications/2026_CVPR/VOI/InsertAnywhere_teaser.mp4"
+    thumbnail: "/assets/publications/2026_CVPR/VOI/teaser.png"
     selected: y
 
   - title: "[A2] Infinite-Homography as Robust Conditioning for Camera-Controlled Video Generation"
