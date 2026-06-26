@@ -1,15 +1,15 @@
 papers:
 
-  - title: "[A3] InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion"
+  - title: "[C6] InsertAnywhere: Geometrically Grounded and Optics-Aware Video Object Insertion"
     authors: "<b>Hoiyeong Jin*</b>, Hyojin Jang*, Junha Hyung*, Jeongho Kim*, Kinam Kim, Dongjin Kim, Huijin Choi, Hyeonji Kim, Jaegul Choo"
     venue: "In European Conference on Computer Vision (ECCV), 2026."
     paper_pdf: "https://arxiv.org/abs/2512.17504"
     code: "https://github.com/myyzzzoooo/InsertAnywhere"
     project_page: "https://myyzzzoooo.github.io/InsertAnywhere/"
-    thumbnail: "/assets/publications/2026_CVPR/VOI/teaser.png"
+    thumbnail: "/assets/publications/2026_CVPR/VOI/teaser.mp4"
     selected: y
 
-  - title: "[A2] Infinite-Homography as Robust Conditioning for Camera-Controlled Video Generation"
+  - title: "[C5] Infinite-Homography as Robust Conditioning for Camera-Controlled Video Generation"
     authors: "Min-Jung Kim*, Jeongho Kim*, <b>Hoiyeong Jin</b>, Junha Hyung, Jaegul Choo"
     venue: "In European Conference on Computer Vision (ECCV), 2026."
     paper_pdf: "https://arxiv.org/abs/2512.17040"
@@ -18,7 +18,17 @@ papers:
     thumbnail: "/assets/publications/2026_CVPR/NVVS/FreeCam.mp4"
     selected: y
 
-  - title: "[A1] ACG: Action Coherence Guidance for Flow-based VLA models"
+  - title: "[C4] 3D HAMSTER: Bridging Planning and Control in Hierarchical Vision-Language-Action Models via 3D Trajectory Guidance"
+    authors: "Dongyoon Hwang*, Byung Kun Lee*, Dongjin Kim*, Hyojin Jang, <b>Hoiyeong Jin</b>, Jueun Mun, Minho Park, Hojoon Lee, Hyunseung Kim, Jaegul Choo"
+    venue: "In IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026."
+    paper_pdf: ""
+    code: ""
+    project_page: ""
+    thumbnail: "/assets/publications/2026_IROS/teaser.png"
+    thumb_ratio: "1 / 1"
+    selected: y
+
+  - title: "[C3] ACG: Action Coherence Guidance for Flow-based VLA models"
     authors: "Minho Park*, Kinam Kim*, Junha Hyung, Hyojin Jang, <b>Hoiyeong Jin</b>, Jooyeol Yun, Hojoon Lee, Jaegul Choo"
     venue: "IEEE International Conference on Robotics & Automation (ICRA), 2026."
     paper_pdf: "https://arxiv.org/abs/2510.22201"

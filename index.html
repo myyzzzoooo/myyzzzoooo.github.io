@@ -68,7 +68,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
   <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
-  <link rel="stylesheet" href=/libs/custom/my_css.css>
+  <link rel="stylesheet" href="/libs/custom/my_css.css?v=9">
 
   <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -109,10 +109,10 @@
   <div class="wrapper">
 
     <header>
-      <a class="image avatar" href="/"><img src='/assets/profile-pics/hy_profile.jpeg?v=2' alt="Hoiyeong Jin"></a>
+      <a class="image avatar" href="/"><img src='/assets/profile-pics/hy_avatar.jpg?v=3' alt="Hoiyeong Jin"></a>
       <h1>Hoiyeong Jin</h1>
-      <p class="position">M.S./Ph.D. Integrated Student at KAIST</p>
-      <p class="affil">Graduate School of Artificial Intelligence</p>
+      <p class="position">M.S./Ph.D. Integrated Student</p>
+      <p class="affil">Artificial Intelligence, KAIST</p>
       <p class="email">hy.jin [AT] kaist.ac.kr</p>
       <p class="social-icons">
         <a href="https://scholar.google.com/citations?user=Jp-zhtUAAAAJ&hl=en" target="_blank" title="Google Scholar">
@@ -145,7 +145,7 @@
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
   <p class="publication-note">
-    (*: Equal contribution, C: Conferences, A: ArXiv).
+    (*: Equal contribution, C: Conferences).
   </p>
 
   <div class="publications">
@@ -155,13 +155,14 @@
         {% if paper.thumbnail %}
           <div class="abbr">
             {% assign thumbnail_ext = paper.thumbnail | split: '.' | last | downcase %}
+            {% assign thumb_ratio = paper.thumb_ratio | default: '16 / 9' %}
             {% if thumbnail_ext == 'mp4' or thumbnail_ext == 'webm' or thumbnail_ext == 'mov' or thumbnail_ext == 'avi' %}
-              <video class="teaser" autoplay loop muted playsinline>
+              <video class="teaser" style="aspect-ratio: {{ thumb_ratio }}" autoplay loop muted playsinline>
                 <source src="{{ paper.thumbnail }}" type="video/{{ thumbnail_ext }}">
                 Your browser does not support the video tag.
               </video>
             {% else %}
-              <img class="teaser" src="{{ paper.thumbnail }}" alt="{{ paper.title }} teaser">
+              <img class="teaser" style="aspect-ratio: {{ thumb_ratio }}" src="{{ paper.thumbnail }}" alt="{{ paper.title }} teaser">
             {% endif %}
           </div>
         {% endif %}
@@ -191,45 +192,45 @@
 <!-- ========== Education ========== -->
 <div class="docs-section" id="education">
   <h4>Education</h4>
-  
-    <div class="paper">
-      <p class="title">
-        <b>Korea Advanced Institute of Science and Technology (KAIST)</b>
-        <b style="float:right;">2025 - Current</b>
-      </p>
-      <p>Integrated M.S/Ph.D Student in Graduate School of Artificial Intelligence</p>
+
+    <div class="edu-row">
+      <div class="edu-date">2025 - Present</div>
+      <div class="edu-info">
+        <div class="edu-school"><b>Korea Advanced Institute of Science and Technology (KAIST)</b></div>
+        <div class="edu-degree">Integrated M.S./Ph.D. Student, Graduate School of Artificial Intelligence</div>
+      </div>
     </div>
-  
-    <div class="paper">
-      <p class="title">
-        <b>KyungHee University</b>
-        <b style="float:right;">2019 - 2023</b>
-      </p>
-      <p>B.S. in Software Convergence</p>
+
+    <div class="edu-row">
+      <div class="edu-date">2019 - 2023</div>
+      <div class="edu-info">
+        <div class="edu-school"><b>Kyung Hee University</b></div>
+        <div class="edu-degree">B.S. in Software Convergence</div>
+      </div>
     </div>
-  
+
 </div>
 
 <!-- ========== Experience ========== -->
 <div class="docs-section" id="experience">
   <h4>Experience</h4>
-  
-    <div class="paper">
-      <p class="title">
-        <b>Undergraduate Researcher</b>
-        <b style="float:right;">May. 2024 - Feb. 2025</b>
-      </p>
-      <p><a href="https://davian.kaist.ac.kr/">Data and Visual Analytics Lab (DAVIAN Lab)</a> (advised by <a href="https://sites.google.com/site/jaegulchoo/">Prof. Jaegul Choo</a>)</p>
+
+    <div class="edu-row">
+      <div class="edu-date">May 2024 - Feb 2025</div>
+      <div class="edu-info">
+        <div class="edu-school"><b>Undergraduate Researcher</b></div>
+        <div class="edu-degree"><a href="https://davian.kaist.ac.kr/" target="_blank">Data and Visual Analytics Lab (DAVIAN Lab)</a>, advised by <a href="https://sites.google.com/site/jaegulchoo/" target="_blank">Prof. Jaegul Choo</a></div>
+      </div>
     </div>
-  
-    <div class="paper">
-      <p class="title">
-        <b>Undergraduate Researcher</b>
-        <b style="float:right;">Mar. 2021 - Sep. 2023</b>
-      </p>
-      <p><a href="https://mlvc.khu.ac.kr/">Machine Learning and Visual Computing Lab (MLVC Lab)</a> (advised by <a href="https://scholar.google.co.kr/citations?user=EULut5oAAAAJ&hl=ko">Prof. Sungho Bae</a>)</p>
+
+    <div class="edu-row">
+      <div class="edu-date">Mar 2021 - Sep 2023</div>
+      <div class="edu-info">
+        <div class="edu-school"><b>Undergraduate Researcher</b></div>
+        <div class="edu-degree"><a href="https://mlvc.khu.ac.kr/" target="_blank">Machine Learning and Visual Computing Lab (MLVC Lab)</a>, advised by <a href="https://scholar.google.co.kr/citations?user=EULut5oAAAAJ&hl=ko" target="_blank">Prof. Sung-Ho Bae</a></div>
+      </div>
     </div>
-  
+
 </div>
 
 <!-- ========== Academic Services ========== -->

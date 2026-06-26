@@ -33,7 +33,7 @@ strong, b { color: #222; font-weight: 500; }
    Two-column layout: fixed sidebar (header) + scrolling content (section)
    ========================================================================= */
 .wrapper {
-  width: 1060px;
+  width: 1100px;
   max-width: 92%;
   margin: 0 auto;
 }
@@ -49,8 +49,8 @@ header {
 }
 header .image.avatar { display: inline-block; margin: 0 0 1.1em 0; }
 header .image.avatar img {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
@@ -76,7 +76,7 @@ header .social-icons a:hover { transform: scale(1.2); }
 
 /* ---------- Content (scrolling, right) ---------- */
 section.content {
-  width: 740px;
+  width: 780px;
   float: right;
   padding-top: 4em;
   padding-bottom: 50px;
@@ -113,6 +113,12 @@ section.content {
 .pub-row .pub-info .title a { color: #39c; }
 .pub-row .pub-info .title a:hover { color: #069; }
 .pub-row .pub-info .author { margin-bottom: 2px; }
+.pub-row .pub-info .author b {
+  color: #222;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 .pub-row .pub-info .periodical { margin-bottom: 0; }
 .pub-row .pub-info .periodical em { font-style: italic; }
 
@@ -122,17 +128,40 @@ section.content {
   color: #000;
   border: 1px solid #000;
   border-radius: 3px;
-  padding: 2px 14px;
+  padding: 0 14px;
   margin-right: 6px;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.35;
   background: transparent;
   text-transform: none;
 }
 .pub-row .links a.btn:hover { color: #043361; border-color: #043361; }
 
-/* ---------- Education / Experience / Honors ---------- */
+/* ---------- Education & Experience (xpandora-style: year on the left) ---------- */
+.edu-row {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 9px;
+  margin-bottom: 9px;
+  border-bottom: 1px solid #ececec;
+}
+.edu-row:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+.edu-row .edu-date {
+  flex: 0 0 135px;
+  max-width: 135px;
+  color: #828282;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+.edu-row .edu-info { flex: 1 1 auto; min-width: 0; }
+.edu-row .edu-school { margin-bottom: 1px; }
+.edu-row .edu-school b { color: #043361; font-weight: 600; }
+.edu-row .edu-degree { color: #595959; }
+.edu-row .edu-degree a { color: #39c; }
+.edu-row .edu-degree a:hover { color: #069; }
+
+/* ---------- Honors ---------- */
 .paper { margin-bottom: 16px; }
 .paper p { margin-bottom: 2px; }
 .paper .title b { color: #043361; }
@@ -171,4 +200,6 @@ section.content {
   .pub-row { display: block; }
   .pub-row .abbr { max-width: 100%; padding: 0 0 8px; }
   .pub-row .teaser { max-width: 100%; }
+  .edu-row { display: block; }
+  .edu-row .edu-date { max-width: 100%; margin-bottom: 2px; }
 }
