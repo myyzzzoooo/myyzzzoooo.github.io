@@ -181,7 +181,7 @@ section.content {
    Responsive: collapse to single column on narrower screens
    ========================================================================= */
 @media (max-width: 1024px) {
-  .wrapper { width: auto; max-width: 760px; }
+  .wrapper { width: auto; max-width: 760px; padding: 0 22px; box-sizing: border-box; }
   header, section.content {
     float: none;
     position: static;
