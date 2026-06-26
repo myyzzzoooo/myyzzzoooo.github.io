@@ -1,8 +1,8 @@
 papers:
 
   - title: "[A3] InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion"
-    authors: "<b>Hoiyeong Jin*</b>, Hyojin Jang*, Jeongho Kim*, Junha Hyung, Kinam Kim, Dongjin Kim, Huijin Choi, Hyeonji Kim, Jaegul Choo"
-    venue: "Under Review, 2025."
+    authors: "<b>Hoiyeong Jin*</b>, Hyojin Jang*, Junha Hyung*, Jeongho Kim*, Kinam Kim, Dongjin Kim, Huijin Choi, Hyeonji Kim, Jaegul Choo"
+    venue: "In European Conference on Computer Vision (ECCV), 2026."
     paper_pdf: "https://arxiv.org/abs/2512.17504"
     code: "https://github.com/myyzzzoooo/InsertAnywhere"
     project_page: "https://myyzzzoooo.github.io/InsertAnywhere/"
@@ -11,7 +11,7 @@ papers:
 
   - title: "[A2] Infinite-Homography as Robust Conditioning for Camera-Controlled Video Generation"
     authors: "Min-Jung Kim*, Jeongho Kim*, <b>Hoiyeong Jin</b>, Junha Hyung, Jaegul Choo"
-    venue: "Under Review, 2025."
+    venue: "In European Conference on Computer Vision (ECCV), 2026."
     paper_pdf: "https://arxiv.org/abs/2512.17040"
     code: "https://github.com/emjay73/InfCam"
     project_page: "https://emjay73.github.io/InfCam/"
