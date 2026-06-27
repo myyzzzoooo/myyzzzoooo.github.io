@@ -1,26 +1,29 @@
 papers:
 
-  - title: "[C6] InsertAnywhere: Geometrically Grounded and Optics-Aware Video Object Insertion"
+  - title: "InsertAnywhere: Geometrically Grounded and Optics-Aware Video Object Insertion"
     authors: "<b>Hoiyeong Jin*</b>, Hyojin Jang*, Junha Hyung*, Jeongho Kim*, Kinam Kim, Dongjin Kim, Huijin Choi, Hyeonji Kim, Jaegul Choo"
     venue: "In European Conference on Computer Vision (ECCV), 2026."
+    venue_short: "ECCV 2026"
     paper_pdf: "https://arxiv.org/abs/2512.17504"
     code: "https://github.com/myyzzzoooo/InsertAnywhere"
     project_page: "https://myyzzzoooo.github.io/InsertAnywhere/"
     thumbnail: "/assets/publications/2026_CVPR/VOI/teaser.mp4"
     selected: y
 
-  - title: "[C5] Infinite-Homography as Robust Conditioning for Camera-Controlled Video Generation"
+  - title: "Infinite-Homography as Robust Conditioning for Camera-Controlled Video Generation"
     authors: "Min-Jung Kim*, Jeongho Kim*, <b>Hoiyeong Jin</b>, Junha Hyung, Jaegul Choo"
     venue: "In European Conference on Computer Vision (ECCV), 2026."
+    venue_short: "ECCV 2026"
     paper_pdf: "https://arxiv.org/abs/2512.17040"
     code: "https://github.com/emjay73/InfCam"
     project_page: "https://emjay73.github.io/InfCam/"
     thumbnail: "/assets/publications/2026_CVPR/NVVS/FreeCam.mp4"
     selected: y
 
-  - title: "[C4] 3D HAMSTER: Bridging Planning and Control in Hierarchical Vision-Language-Action Models via 3D Trajectory Guidance"
+  - title: "3D HAMSTER: Bridging Planning and Control in Hierarchical Vision-Language-Action Models via 3D Trajectory Guidance"
     authors: "Dongyoon Hwang*, Byung Kun Lee*, Dongjin Kim*, Hyojin Jang, <b>Hoiyeong Jin</b>, Jueun Mun, Minho Park, Hojoon Lee, Hyunseung Kim, Jaegul Choo"
     venue: "In IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026."
+    venue_short: "IROS 2026"
     paper_pdf: ""
     code: ""
     project_page: ""
@@ -28,26 +31,29 @@ papers:
     thumb_ratio: "1 / 1"
     selected: y
 
-  - title: "[C3] ACG: Action Coherence Guidance for Flow-based VLA models"
+  - title: "ACG: Action Coherence Guidance for Flow-based VLA models"
     authors: "Minho Park*, Kinam Kim*, Junha Hyung, Hyojin Jang, <b>Hoiyeong Jin</b>, Jooyeol Yun, Hojoon Lee, Jaegul Choo"
     venue: "IEEE International Conference on Robotics & Automation (ICRA), 2026."
+    venue_short: "ICRA 2026"
     paper_pdf: "https://arxiv.org/abs/2510.22201"
     code: "https://github.com/davian-robotics/ACG"
     project_page: "https://davian-robotics.github.io/ACG/"
     thumbnail: "/assets/publications/2026_ICRA/acg.mp4"
     selected: y
 
-  - title: "[C2] PromptDresser: Improving the Quality and Controllability of Virtual Try-On via Generative Textual Prompt and Prompt-aware Mask"
+  - title: "PromptDresser: Improving the Quality and Controllability of Virtual Try-On via Generative Textual Prompt and Prompt-aware Mask"
     authors: "Jeongho Kim*, <b>Hoiyeong Jin</b>*, Sunghyun Park, Jaegul Choo"
     venue: "Proceedings of the ieee/cvf international conference on computer vision (ICCV), 2025."
+    venue_short: "ICCV 2025"
     paper_pdf: "https://arxiv.org/abs/2412.16978"
     code: "https://github.com/rlawjdghek/PromptDresser"
     thumbnail: "/assets/publications/2025_ICCV/thumb.png"
     selected: y
 
-  - title: "[C1] Descanning: From scanned to the original images with a color correction diffusion model"
+  - title: "Descanning: From scanned to the original images with a color correction diffusion model"
     authors: "Junghun Cha, Ali Haider, Seoyun Yang, <b>Hoiyeong Jin</b>, Subin Yang, AFM Shahab Uddin, Jaehyoung Kim, Soo Ye Kim, Sung-Ho Bae"
     venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024."
+    venue_short: "AAAI 2024"
     paper_pdf: "https://arxiv.org/abs/2402.05350"
     code: "https://github.com/jhcha08/Descanning"
     thumbnail: "/assets/publications/2024_AAAI/thumb.png"

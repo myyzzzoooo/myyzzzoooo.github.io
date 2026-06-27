@@ -68,7 +68,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
   <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
-  <link rel="stylesheet" href="/libs/custom/my_css.css?v=10">
+  <link rel="stylesheet" href="/libs/custom/my_css.css?v=12">
 
   <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -145,7 +145,7 @@
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
   <p class="publication-note">
-    (*: Equal contribution, C: Conferences).
+    (*: Equal contribution).
   </p>
 
   <div class="publications">
@@ -170,7 +170,11 @@
         <div class="pub-info">
           <div class="title"><a href="{{ paper.paper_pdf }}" target="_blank">{{ paper.title }}</a></div>
           <div class="author">{{ paper.authors }}</div>
-          <div class="periodical"><em>{{ paper.venue }}</em></div>
+          {% if paper.venue_short %}
+            <div class="venue"><span class="venue-badge">{{ paper.venue_short }}</span></div>
+          {% else %}
+            <div class="periodical"><em>{{ paper.venue }}</em></div>
+          {% endif %}
           <div class="links">
             {% if paper.paper_pdf and paper.paper_pdf != "" %}
               <a class="btn" href="{{ paper.paper_pdf }}" target="_blank">PDF</a>
