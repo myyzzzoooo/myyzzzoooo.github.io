@@ -68,7 +68,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
   <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
-  <link rel="stylesheet" href="/libs/custom/my_css.css?v=12">
+  <link rel="stylesheet" href="/libs/custom/my_css.css?v=13">
 
   <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -171,21 +171,34 @@
           <div class="title"><a href="{{ paper.paper_pdf }}" target="_blank">{{ paper.title }}</a></div>
           <div class="author">{{ paper.authors }}</div>
           {% if paper.venue_short %}
-            <div class="venue"><span class="venue-badge">{{ paper.venue_short }}</span></div>
+            <div class="venue-line">
+              <span class="venue-badge">{{ paper.venue_short }}</span>
+              <span class="links">
+                {% if paper.paper_pdf and paper.paper_pdf != "" %}
+                  <a class="btn" href="{{ paper.paper_pdf }}" target="_blank">PDF</a>
+                {% endif %}
+                {% if paper.code and paper.code != "" %}
+                  <a class="btn" href="{{ paper.code }}" target="_blank">Code</a>
+                {% endif %}
+                {% if paper.project_page and paper.project_page != "" %}
+                  <a class="btn" href="{{ paper.project_page }}" target="_blank">Project Page</a>
+                {% endif %}
+              </span>
+            </div>
           {% else %}
             <div class="periodical"><em>{{ paper.venue }}</em></div>
+            <div class="links">
+              {% if paper.paper_pdf and paper.paper_pdf != "" %}
+                <a class="btn" href="{{ paper.paper_pdf }}" target="_blank">PDF</a>
+              {% endif %}
+              {% if paper.code and paper.code != "" %}
+                <a class="btn" href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+              {% if paper.project_page and paper.project_page != "" %}
+                <a class="btn" href="{{ paper.project_page }}" target="_blank">Project Page</a>
+              {% endif %}
+            </div>
           {% endif %}
-          <div class="links">
-            {% if paper.paper_pdf and paper.paper_pdf != "" %}
-              <a class="btn" href="{{ paper.paper_pdf }}" target="_blank">PDF</a>
-            {% endif %}
-            {% if paper.code and paper.code != "" %}
-              <a class="btn" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-            {% if paper.project_page and paper.project_page != "" %}
-              <a class="btn" href="{{ paper.project_page }}" target="_blank">Project Page</a>
-            {% endif %}
-          </div>
         </div>
       </div>
       {% endif %}

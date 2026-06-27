@@ -122,6 +122,14 @@ section.content {
 .pub-row .pub-info .periodical { margin-bottom: 0; }
 .pub-row .pub-info .periodical em { font-style: italic; }
 .pub-row .pub-info .venue { margin: 3px 0 0; }
+.pub-row .pub-info .venue-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 0;
+}
+.pub-row .pub-info .venue-line .links { margin-top: 0; }
 .pub-row .pub-info .venue-badge {
   display: inline-block;
   background: #043361;
